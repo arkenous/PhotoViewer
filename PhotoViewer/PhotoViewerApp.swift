@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PhotoViewerApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var appViewModel = AppViewModel()
 
     var body: some Scene {
