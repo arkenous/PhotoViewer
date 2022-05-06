@@ -22,7 +22,7 @@ struct ContentView: View {
                 appViewModel.addViewModel(viewModel, forWindowNumber: window.windowNumber)
             }
             if (viewModel.path != nil) {
-                AnimatedImage(url: viewModel.path, isAnimating: .constant(true))
+                WebImage(url: viewModel.path, isAnimating: .constant(true))
                     .resizable(resizingMode: .stretch)
                     .scaledToFill()
             }
