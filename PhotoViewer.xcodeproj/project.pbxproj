@@ -12,6 +12,8 @@
 		BEB2B20A2824FE910029BB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2B2092824FE910029BB8A /* Assets.xcassets */; };
 		BEB2B20D2824FE910029BB8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2B20C2824FE910029BB8A /* Preview Assets.xcassets */; };
 		BEB2B216282500010029BB8A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BEB2B215282500010029BB8A /* SDWebImageSwiftUI */; };
+		BEB2B218282500C10029BB8A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B217282500C10029BB8A /* AppViewModel.swift */; };
+		BEB2B21A282501010029BB8A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B219282501010029BB8A /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BEB2B2092824FE910029BB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEB2B20C2824FE910029BB8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BEB2B20E2824FE910029BB8A /* PhotoViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoViewer.entitlements; sourceTree = "<group>"; };
+		BEB2B217282500C10029BB8A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		BEB2B219282501010029BB8A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				BEB2B2092824FE910029BB8A /* Assets.xcassets */,
 				BEB2B20E2824FE910029BB8A /* PhotoViewer.entitlements */,
 				BEB2B20B2824FE910029BB8A /* Preview Content */,
+				BEB2B217282500C10029BB8A /* AppViewModel.swift */,
+				BEB2B219282501010029BB8A /* ContentViewModel.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB2B21A282501010029BB8A /* ContentViewModel.swift in Sources */,
 				BEB2B2082824FE8F0029BB8A /* ContentView.swift in Sources */,
 				BEB2B2062824FE8F0029BB8A /* PhotoViewerApp.swift in Sources */,
+				BEB2B218282500C10029BB8A /* AppViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

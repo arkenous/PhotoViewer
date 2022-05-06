@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PhotoViewerApp: App {
+    @State var appViewModel = AppViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appViewModel)
         }
     }
 }
