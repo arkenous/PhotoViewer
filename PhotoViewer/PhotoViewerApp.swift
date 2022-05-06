@@ -17,5 +17,8 @@ struct PhotoViewerApp: App {
             ContentView()
                 .environmentObject(appViewModel)
         }
+        .commands {
+            MenuCommands(appViewModel: appViewModel)
+        }
     }
 }

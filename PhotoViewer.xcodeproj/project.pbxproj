@@ -15,6 +15,7 @@
 		BEB2B218282500C10029BB8A /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B217282500C10029BB8A /* AppViewModel.swift */; };
 		BEB2B21A282501010029BB8A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B219282501010029BB8A /* ContentViewModel.swift */; };
 		BEB2B21C282504140029BB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B21B282504140029BB8A /* AppDelegate.swift */; };
+		BEB2B21E282505860029BB8A /* MenuCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B21D282505860029BB8A /* MenuCommands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BEB2B217282500C10029BB8A /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		BEB2B219282501010029BB8A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		BEB2B21B282504140029BB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEB2B21D282505860029BB8A /* MenuCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCommands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				BEB2B217282500C10029BB8A /* AppViewModel.swift */,
 				BEB2B219282501010029BB8A /* ContentViewModel.swift */,
 				BEB2B21B282504140029BB8A /* AppDelegate.swift */,
+				BEB2B21D282505860029BB8A /* MenuCommands.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				BEB2B21A282501010029BB8A /* ContentViewModel.swift in Sources */,
 				BEB2B2082824FE8F0029BB8A /* ContentView.swift in Sources */,
+				BEB2B21E282505860029BB8A /* MenuCommands.swift in Sources */,
 				BEB2B2062824FE8F0029BB8A /* PhotoViewerApp.swift in Sources */,
 				BEB2B21C282504140029BB8A /* AppDelegate.swift in Sources */,
 				BEB2B218282500C10029BB8A /* AppViewModel.swift in Sources */,

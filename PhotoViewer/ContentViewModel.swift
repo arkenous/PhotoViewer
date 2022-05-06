@@ -8,5 +8,5 @@
 import Foundation
 
 public class ContentViewModel : ObservableObject {
-    // TODO: 実装する
+    @Published var path: URL? = nil
 }
