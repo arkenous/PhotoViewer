@@ -26,7 +26,25 @@ struct ContentView: View {
                     .resizable(resizingMode: .stretch)
                     .scaledToFill()
             }
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .onDrop(of: ["public.file-url"], isTargeted: nil) { (items) -> Bool in
+            if let item = items.first {
+                if let identifier = item.registeredTypeIdentifiers.first {
+                    item.loadItem(forTypeIdentifier: identifier) { (urlData, error) in
+                        DispatchQueue.main.async {
+                            if let urlData = urlData as? Data {
+                                let url = NSURL(absoluteURLWithDataRepresentation: urlData, relativeTo: nil) as URL
+                                viewModel.path = url
+                            }
+                        }
+                    }
+                }
+                return true
+            } else {
+                return false
+            }
+        }
     }
 }
 
