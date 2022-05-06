@@ -6,19 +6,27 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var appViewModel: AppViewModel
     @StateObject var viewModel: ContentViewModel = ContentViewModel()
     
     var body: some View {
-        HostingWindowFinder { window in
-            guard let window = window else {
-                return
+        ZStack {
+            HostingWindowFinder { window in
+                guard let window = window else {
+                    return
+                }
+                appViewModel.addWindow(window: window)
+                appViewModel.addViewModel(viewModel, forWindowNumber: window.windowNumber)
             }
-            appViewModel.addWindow(window: window)
-            appViewModel.addViewModel(viewModel, forWindowNumber: window.windowNumber)
-        }
+            if (viewModel.path != nil) {
+                AnimatedImage(url: viewModel.path, isAnimating: .constant(true))
+                    .resizable(resizingMode: .stretch)
+                    .scaledToFill()
+            }
+        }.ignoresSafeArea()
     }
 }
 
