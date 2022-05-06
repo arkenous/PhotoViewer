@@ -20,5 +20,7 @@ struct PhotoViewerApp: App {
         .commands {
             MenuCommands(appViewModel: appViewModel)
         }
+        .windowStyle(.hiddenTitleBar)
+        .windowToolbarStyle(.unifiedCompact(showsTitle: false))
     }
 }
