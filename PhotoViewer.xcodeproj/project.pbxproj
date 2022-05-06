@@ -11,6 +11,7 @@
 		BEB2B2082824FE8F0029BB8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB2B2072824FE8F0029BB8A /* ContentView.swift */; };
 		BEB2B20A2824FE910029BB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2B2092824FE910029BB8A /* Assets.xcassets */; };
 		BEB2B20D2824FE910029BB8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB2B20C2824FE910029BB8A /* Preview Assets.xcassets */; };
+		BEB2B216282500010029BB8A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BEB2B215282500010029BB8A /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB2B216282500010029BB8A /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = PhotoViewer;
+			packageProductDependencies = (
+				BEB2B215282500010029BB8A /* SDWebImageSwiftUI */,
+			);
 			productName = PhotoViewer;
 			productReference = BEB2B2022824FE8E0029BB8A /* PhotoViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = BEB2B1F92824FE8E0029BB8A;
+			packageReferences = (
+				BEB2B214282500010029BB8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = BEB2B2032824FE8E0029BB8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEB2B214282500010029BB8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEB2B215282500010029BB8A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEB2B214282500010029BB8A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEB2B1FA2824FE8E0029BB8A /* Project object */;
 }
